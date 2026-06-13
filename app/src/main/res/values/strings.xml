@@ -1,3 +1,77 @@
 <resources>
     <string name="app_name">FarmTrack</string>
+
+    <string name="login_title">Smart Livestock Management</string>
+    <string name="login_description">Kelola pendataan sapi, kambing, dan domba milik Anda secara offline-first dengan sinkronisasi REST API otomatis.</string>
+    <string name="login_google_card_header">Masuk Akun Google Anda</string>
+    <string name="login_with_google">Login dengan Google</string>
+    <string name="login_with_demo">Masuk dengan Akun Demo Lainnya</string>
+    <string name="alternative_demo_logger">Masuk dengan Akun Demo Lainnya</string>
+    <string name="profile_pic_desc">Foto profil</string>
+    <string name="menu_profil">Menu Profil</string>
+
+    <string name="unknown_credentials">Jenis Kredensial Tidak Diketahui</string>
+    <string name="google_auto_connected">Akun Google terhubung otomatis...</string>
+    <string name="welcome_farmer">Selamat Datang, %1$s!</string>
+    <string name="welcome_farmer_fallback">Selamat Datang, Peternak!</string>
+    <string name="failed_with_prefix">Gagal: %1$s</string>
+    <string name="toast_sucess_add">Data ternak berhasil ditambahkan</string>
+    <string name="toast_sucess_update">Data ternak berhasil diupdate</string>
+    <string name="toast_sucess_delete">Data ternak berhasil dihapus</string>
+    <string name="toast_sucess_logout">Berhasil keluar akun</string>
+
+    <string name="batal">Batal</string>
+    <string name="tutup">Tutup</string>
+    <string name="keluar">Keluar</string>
+    <string name="simpan">Simpan</string>
+    <string name="tambah">Tambah</string>
+    <string name="ubah_data_ternak">Ubah Data Ternak</string>
+    <string name="tambah_ternak_baru">Tambah Ternak Baru</string>
+    <string name="pilih_foto">Pilih Foto</string>
+    <string name="add_photo_desc">Tambah Foto</string>
+    <string name="nama_ternak">Nama Ternak</string>
+    <string name="nama_ternak_placeholder">Contoh: Sapi Madura</string>
+    <string name="tipe_jenis_ternak">Tipe/Jenis Ternak</string>
+    <string name="tipe_jenis_ternak_placeholder">Contoh: Sapi Limosin / Kambing Etawa</string>
+    <string name="umur_bulan">Umur (Bulan)</string>
+    <string name="umur_label_badge">UMUR</string>
+    <string name="berat_label_badge">BERAT</string>
+    <string name="umur_mths_suffix">%1$d Bulan</string>
+    <string name="berat_kg_suffix">%1$.1f Kg</string>
+    <string name="umur_placeholder">12</string>
+    <string name="berat_kg">Berat (Kg)</string>
+    <string name="berat_placeholder">350.5</string>
+    <string name="gunakan_preset_ternak">Gunakan Preset Tipe Ternak (Opsional)</string>
+    <string name="simpan_ubahan">Simpan Ubahan</string>
+    <string name="konfirmasi_hapus">Konfirmasi Hapus</string>
+    <string name="konfirmasi_hapus_desc">Apakah Anda yakin ingin menghapus data ternak \'%1$s\'? Tindakan ini tidak dapat dibatalkan.</string>
+    <string name="hapus">Hapus</string>
+
+    <string name="total_ternak">Total Ternak</string>
+    <string name="sapi">SAPI</string>
+    <string name="kambing">KAMBING</string>
+    <string name="lokal_belum_sinkron">Lokal • Belum Sinkron</string>
+    <string name="tersinkron_dengan_cloud">Tersinkron dengan Cloud</string>
+    <string name="diupdate">Diupdate: %1$s</string>
+    <string name="dibuat">Dibuat: %1$s</string>
+    <string name="waktu">Waktu: -</string>
+    <string name="pending_sync_bar_text">Terdapat %1$d perubahan lokal menunggu sinkronisasi</string>
+    <string name="sinkron_button_text">SINKRON</string>
+    <string name="sync_progress_text">Sinkronisasi data ke server...</string>
+    <string name="online_text">ONLINE</string>
+    <string name="offline_only_text">HANYA LOKAL</string>
+    <string name="tersinkron_text">Tersinkron</string>
+    <string name="mode_offline_text">Mode Offline</string>
+    <string name="total_badge_text">Total</string>
+
+    <string name="belum_ada_ternak">Belum Ada Ternak Terdaftar</string>
+    <string name="belum_ada_ternak_desc">Tekan tombol + di kanan bawah untuk menambahkan hewan ternak Anda.</string>
+    <string name="muat_ulang_data">Muat Ulang Data</string>
+    <string name="memproses_data">Memproses data...</string>
+
+    <string name="peternak_smart">Peternak Smart</string>
+    <string name="default_email">peternak@farmtrack.com</string>
+    <string name="profil_peternak">Profil Peternak</string>
+    <string name="photo_profil_desc">Foto Profil</string>
+    <string name="fallback_photo_desc">Foto Cadangan</string>
 </resources>
