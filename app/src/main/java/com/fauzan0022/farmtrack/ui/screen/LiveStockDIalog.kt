@@ -288,7 +288,7 @@ fun AddEditLivestockDialog(
                     label = { Text(stringResource(R.string.nama_ternak), fontSize = 13.sp) },
                     placeholder = {
                         Text(
-                            "Contoh: Si Black, Boni, Moly",
+                            "Contoh: Sapi, Ayam",
                             color = Color(0xFF94A3B8)
                         )
                     },
@@ -324,7 +324,7 @@ fun AddEditLivestockDialog(
                     label = { Text(stringResource(R.string.tipe_jenis_ternak), fontSize = 13.sp) },
                     placeholder = {
                         Text(
-                            "Contoh: Sapi Perah, Kambing",
+                            "Contoh: Sapi Limosin. Ayam Kampung",
                             color = Color(0xFF94A3B8)
                         )
                     },
