@@ -133,7 +133,7 @@ fun AddEditLivestockDialog(
     val weightErrorText = when {
         weightStr.isNotEmpty() && weightParsed == null -> "Harus angka desimal"
         weightParsed != null && weightParsed <= 0.1 -> "Harus > 0.1 kg"
-        weightParsed != null && weightParsed > 30000.0 -> "Terlalu berat"
+        weightParsed != null && weightParsed > 300000.0 -> "Terlalu berat"
         else -> ""
     }
 
