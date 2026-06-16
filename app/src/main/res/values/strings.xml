@@ -5,8 +5,6 @@
     <string name="login_description">Kelola pendataan sapi, kambing, dan domba milik Anda secara offline-first dengan sinkronisasi REST API otomatis.</string>
     <string name="login_google_card_header">Masuk Akun Google Anda</string>
     <string name="login_with_google">Login dengan Google</string>
-    <string name="login_with_demo">Masuk dengan Akun Demo Lainnya</string>
-    <string name="alternative_demo_logger">Masuk dengan Akun Demo Lainnya</string>
     <string name="profile_pic_desc">Foto profil</string>
     <string name="menu_profil">Menu Profil</string>
 
@@ -51,7 +49,7 @@
     <string name="sapi">SAPI</string>
     <string name="kambing">KAMBING</string>
     <string name="lokal_belum_sinkron">Lokal • Belum Sinkron</string>
-    <string name="tersinkron_dengan_cloud">Tersinkron dengan Cloud</string>
+    <string name="tersinkron_dengan_cloud">Tersinkron dengan API</string>
     <string name="diupdate">Diupdate: %1$s</string>
     <string name="dibuat">Dibuat: %1$s</string>
     <string name="waktu">Waktu: -</string>

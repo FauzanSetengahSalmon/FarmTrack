@@ -1,3 +1,5 @@
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.compose)
@@ -6,17 +8,26 @@ plugins {
 }
 
 android {
-    namespace = "com.example"
+    namespace = "com.fauzan0022.farmtrack"
+    // Sesuai janji, bagian compileSdk bawaan laptopmu TIDAK DIGANTI SAMA SEKALI:
     compileSdk { version = release(36) { minorApiLevel = 1 } }
 
     defaultConfig {
-        applicationId = "com.aistudio.farmtrack.yrtwlm"
+        applicationId = "com.fauzan0022.farmtrack"
         minSdk = 26
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        val properties = Properties()
+        properties.load(
+            project.rootProject.file("local.properties").inputStream()
+        )
+        buildConfigField(
+            "String", "API_KEY", properties.getProperty("API_KEY")
+        )
     }
 
     signingConfigs {
@@ -28,7 +39,7 @@ android {
             keyPassword = System.getenv("KEY_PASSWORD")
         }
         create("debugConfig") {
-            storeFile = file("${rootDir}/debug.keystore")
+            storeFile = file(System.getProperty("user.home") + "/.android/debug.keystore")
             storePassword = "android"
             keyAlias = "androiddebugkey"
             keyPassword = "android"
@@ -52,7 +63,7 @@ android {
     }
     buildFeatures {
         compose = true
-        buildConfig = true
+        buildConfig = true // Memastikan fitur BuildConfig aktif
     }
     testOptions { unitTests { isIncludeAndroidResources = true } }
 }
