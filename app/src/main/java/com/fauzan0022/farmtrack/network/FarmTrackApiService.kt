@@ -29,11 +29,15 @@ interface FarmTrackApiService {
         @Part photo: MultipartBody.Part
     ): OpStatusDto
 
-    @Headers("Content-Type: application/json")
-    @PUT("livestock/{id}")
+    @Multipart
+    @POST("livestock/{id}?_method=PUT")
     suspend fun updateLivestock(
         @Path("id") id: Int,
-        @Body body: LivestockUpdateDto
+        @Part("name") name: RequestBody,
+        @Part("type") type: RequestBody,
+        @Part("age") age: RequestBody,
+        @Part("weight") weight: RequestBody,
+        @Part photo: MultipartBody.Part?
     ): OpStatusDto
 
     @DELETE("livestock/{id}")
@@ -48,23 +52,19 @@ interface FarmTrackApiService {
             val logger = HttpLoggingInterceptor().apply {
                 level = HttpLoggingInterceptor.Level.BODY
             }
-
             val client = OkHttpClient.Builder()
                 .addInterceptor(logger)
                 .connectTimeout(30, TimeUnit.SECONDS)
                 .readTimeout(30, TimeUnit.SECONDS)
                 .build()
-
             val moshi = Moshi.Builder()
                 .add(KotlinJsonAdapterFactory())
                 .build()
-
             val retrofit = Retrofit.Builder()
                 .baseUrl(BASE_URL)
                 .client(client)
                 .addConverterFactory(MoshiConverterFactory.create(moshi))
                 .build()
-
             return retrofit.create(FarmTrackApiService::class.java)
         }
     }
