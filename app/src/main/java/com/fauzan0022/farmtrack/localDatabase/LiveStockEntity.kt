@@ -1,4 +1,4 @@
-package com.fauzan0022.farmtrack.DatabaseLocal
+package com.fauzan0022.farmtrack.localDatabase
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

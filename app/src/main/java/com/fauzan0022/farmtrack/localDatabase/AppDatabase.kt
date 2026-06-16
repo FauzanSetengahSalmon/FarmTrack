@@ -1,4 +1,4 @@
-package com.fauzan0022.farmtrack.DatabaseLocal
+package com.fauzan0022.farmtrack.localDatabase
 
 import android.content.Context
 import androidx.room.Database
@@ -7,9 +7,7 @@ import androidx.room.RoomDatabase
 
 @Database(entities = [LivestockEntity::class], version = 2, exportSchema = false)
 abstract class AppDatabase : RoomDatabase() {
-
     abstract fun livestockDao(): LivestockDao
-
     companion object {
         @Volatile
         private var INSTANCE: AppDatabase? = null
