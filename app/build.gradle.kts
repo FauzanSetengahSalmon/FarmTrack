@@ -62,7 +62,7 @@ android {
     }
     buildFeatures {
         compose = true
-        buildConfig = true // Memastikan fitur BuildConfig aktif
+        buildConfig = true
     }
     testOptions { unitTests { isIncludeAndroidResources = true } }
 }
