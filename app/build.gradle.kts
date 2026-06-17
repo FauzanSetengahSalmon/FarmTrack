@@ -9,7 +9,6 @@ plugins {
 
 android {
     namespace = "com.fauzan0022.farmtrack"
-    // Sesuai janji, bagian compileSdk bawaan laptopmu TIDAK DIGANTI SAMA SEKALI:
     compileSdk { version = release(36) { minorApiLevel = 1 } }
 
     defaultConfig {
